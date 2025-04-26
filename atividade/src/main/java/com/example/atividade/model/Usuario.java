@@ -8,16 +8,16 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JoinColumn(nullable = false)
+    @Column(nullable = false)
     private String nome;
 
-    @JoinColumn(nullable = false, unique = true)
+    @Column(nullable = false, unique = true)
     private String email;
 
-    @JoinColumn(nullable = false)
+    @Column(nullable = false)
     private String senha;
 
-    @JoinColumn(nullable = false,unique = true)
+    @Column(nullable = false,unique = true)
     private String telefone;
 
     public Usuario() {

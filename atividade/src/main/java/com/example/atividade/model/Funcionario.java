@@ -8,28 +8,28 @@ public class Funcionario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JoinColumn(nullable = false)
+    @Column(nullable = false)
     private String nome;
 
-    @JoinColumn(unique = true, nullable = false)
+    @Column(unique = true, nullable = false)
     private String cpf;
 
-    @JoinColumn(unique = true)
+    @Column(unique = true)
     private String rg;
 
-    @JoinColumn(unique = true, nullable = false)
+    @Column(unique = true, nullable = false)
     private String matricula;
 
-    @JoinColumn(nullable = false)
+    @Column(nullable = false)
     private String dataDeNascimento;
 
-    @JoinColumn(nullable = false)
+    @Column(nullable = false)
     private double salario = 2000;
 
-    @JoinColumn(unique = true, nullable = false)
+    @Column(unique = true, nullable = false)
     private String telefone;
 
-    @JoinColumn(unique = true)
+    @Column(unique = true)
     private String email;
 
     public Funcionario(Long id, String nome, String cpf, String rg, String dataDeNascimento, String telefone, String email) {
